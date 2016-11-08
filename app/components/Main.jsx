@@ -6,8 +6,11 @@ class Main extends Component {
 		return (
 			<div>
 				<Navigation />
-				<h2>Main Component</h2>
-				{this.props.children}
+				<div className="row">
+					<div className="columns medium-6 large-4 small-centered">
+						{this.props.children}
+					</div>
+				</div>				
 			</div>
 		);
 	}

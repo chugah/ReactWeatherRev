@@ -1,0 +1,9 @@
+
+.top-bar, ul li {
+	background-color: #FFF !important;
+}
+
+.us-map {
+	width: 3rem;
+	height: 2rem;
+}
