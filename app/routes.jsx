@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Router, IndexRoute, hashHistory } from 'react-router';
 import Main from 'Main';
-import Weather from'Weather';
+import Weather from 'Weather';
 import About from 'About';
 import Examples from 'Examples';
 

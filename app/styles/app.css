@@ -7,3 +7,68 @@
 	width: 3rem;
 	height: 2rem;
 }
+
+.container {
+	width: 100%;
+	background: #fff;
+	margin: auto;
+}
+.main-header {
+	text-align: center;
+	padding: 2.8px 0;
+}
+
+
+.photo-container {
+  display: inline-block;
+  margin: 3rem 3rem 3rem 0;
+  text-align: center;
+  width: auto;
+}
+
+.photo-container img {
+ 	max-width: 100%;
+ 	position: relative;
+	z-index: 100;
+}
+
+.photo {
+	position: relative;
+}
+
+.photo-desc {
+  background: #345d88 none repeat scroll 0 0;
+  bottom: 4px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/* ================================= 
+ Image 3D Transforms & Transitions
+==================================== */
+
+.photo {
+	transition: transform 1s ease-in;
+	transform-style: preserve-3d;
+}
+
+.photo:hover {
+	transform: rotate3d(1,0,0, 180deg);
+}
+
+.side-a, .side-b {
+	backface-visibility: hidden;
+}
+
+.side-b {
+	transform: rotateX(180deg);
+}

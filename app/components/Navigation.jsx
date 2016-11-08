@@ -12,7 +12,7 @@ class Navigation extends Component {
 	
 	renderWeatherImage() {
 		return (
-			<div class="expanded row">
+			<div className="expanded row">
     			<img src={weather_path} width="100%" />
     		</div>
 		);
