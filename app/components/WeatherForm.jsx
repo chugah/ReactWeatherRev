@@ -13,11 +13,13 @@ class WeatherForm extends Component {
 	}
 	render() {
 		return (
-			<div>
-				<form onSubmit={this.onFormSubmit.bind(this)}>
-					<input type="text" ref="location" placeholder="Search weather by city" />
-					<button>Submit</button>
-				</form>
+			<div className="row">
+				<div className="small-12 columns">
+					<form onSubmit={this.onFormSubmit.bind(this)}>
+						<input type="search" ref="location" placeholder="Search weather by city" />
+						<button className="expanded button hollow">Submit</button>
+					</form>
+				</div>
 			</div>
 		);
 	}

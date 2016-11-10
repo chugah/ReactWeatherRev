@@ -8,7 +8,7 @@ class About extends Component {
 		return (
 			<div>
 				<div className="columns small-12">
-					<h1 className="text-centered">About NWS</h1>
+					<h1 className="page-title">About NWS</h1>
 					<p>The National Weather Service (NWS) is an application built using React. 
 					This application provides data about the current weather in a US city.</p>
 					<p>Here are some of the tools put to work:</p>

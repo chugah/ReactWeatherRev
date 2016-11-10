@@ -55,7 +55,7 @@ class Weather extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Get Weather</h1>
+				<h1 className="page-title">Get Weather</h1>
 				<WeatherForm onSearch={this.handleSearch.bind(this)} />
 				{this.renderMessage()}
 				{this.renderError()}
