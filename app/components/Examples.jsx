@@ -11,7 +11,7 @@ class Examples extends Component {
 			<div>
 				<div className="columns small-12">
 				<h1 className="text-centered">Examples</h1>
-				<p>Here are a few example locations for illustration purposes:</p>
+				<p>Here are a few locations to illustrate this web application:</p>
 				</div>
 				<div className="columns large-4 photo-container">
 					<div className="photo">

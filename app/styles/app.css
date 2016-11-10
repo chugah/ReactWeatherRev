@@ -8,6 +8,11 @@
 	height: 2rem;
 }
 
+
+/* ==================================== 
+Examples Component
+==================================== */
+
 .container {
 	width: 100%;
 	background: #fff;
@@ -52,8 +57,8 @@
 }
 
 
-/* ================================= 
- Image 3D Transforms & Transitions
+/* ==================================== 
+ Ex Component: Transforms & Transitions
 ==================================== */
 
 .photo {
@@ -72,3 +77,34 @@
 .side-b {
 	transform: rotateX(180deg);
 }
+
+/* ==================================== 
+About Component
+==================================== */
+
+.about-p {
+  margin: 2rem 0 2rem 0;
+}
+.content > div {
+    text-align: center;
+    margin: 0 3rem 2rem 0;
+    width: 20rem;
+    display: inline-block;
+    padding:10px;
+    transition-duration: 2s;
+    transition-property: background-color, color;
+    transition-delay: 1s;
+}
+
+
+#block-1:hover {
+    background-color: #dfdfdf;
+    color: #00558b;
+}
+
+#block-2:hover {
+    background-color: #dfdfdf;
+    color: #F04124;
+}
+
+
