@@ -9,7 +9,7 @@ class Weather extends Component {
 		super(props);
 		this.state = { 
 			isLoading: false,
-			errorMessage: undefined 
+			errorMessage: undefined,
 		};
 	}
 
@@ -17,7 +17,9 @@ class Weather extends Component {
 		var that = this;
 		this.setState({ 
 			isLoading: true,
-			errorMessage: undefined 
+			errorMessage: undefined,
+			location: undefined,
+			temp: undefined 
 		});
 		openWeatherMap.getTemp(location).then(function (temp) {
 			that.setState({
@@ -32,6 +34,25 @@ class Weather extends Component {
 		});
 			alert(errorMessage);
 		});
+	}
+
+	handleLocation(location) {
+		if (location && location.length > 0) {
+			this.handleSearch(location);
+			window.location.hash = '#/';
+		}
+	}
+
+	componentDidMount() {
+		var location = this.props.location.query.location;
+
+		this.handleLocation(location);
+	}
+
+	componentWillReceiveProps(newProps) {
+		var location = newProps.location.query.location;
+
+		this.handleLocation(location);
 	}
 	
 	renderMessage() {
