@@ -10,8 +10,8 @@ class Examples extends Component {
 		return (
 			<div>
 				<div className="columns small-12">
-				<h1 className="page-title">NWS Examples</h1>
-				<p>Here are a few locations to illustrate this web application:</p>
+				<h1 className="page-title">Weather Service Examples</h1>
+				<p>Here are a few U.S. cities to illustrate this web application:</p>
 				</div>
 				<div className="columns large-4 photo-container">
 					<div className="photo">

@@ -4,7 +4,7 @@ import ReactDOMServer from 'react-dom/server';
 
 class ErrorModal extends Component {
 	componentDidMount() {
-		var { title } = this.props;
+		var { title, location } = this.props;
 		var modalMarkup = (
 			<div id="error-modal" className="reveal tiny text-center" data-reveal="">
 				<h4>{title}</h4>

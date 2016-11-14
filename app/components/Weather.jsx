@@ -31,8 +31,7 @@ class Weather extends Component {
 			that.setState({ 
 				isLoading: false,
 				errorMessage: e.message 
-		});
-			alert(errorMessage);
+			});
 		});
 	}
 
@@ -76,7 +75,9 @@ class Weather extends Component {
 	render() {
 		return (
 			<div>
-				<h1 className="page-title">Get Weather</h1>
+				<div className="weather-icon">
+					<h1 className="page-title">Weather Finder</h1>
+				</div>
 				<WeatherForm onSearch={this.handleSearch.bind(this)} />
 				{this.renderMessage()}
 				{this.renderError()}

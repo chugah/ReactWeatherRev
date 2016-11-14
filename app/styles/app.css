@@ -23,6 +23,54 @@ Navigation Component
 	height: 2rem;
 }
 
+#weather-site {
+  color: #FFF;
+  margin-left: 4rem;
+  position: absolute;
+  z-index: 0;
+}
+
+/* ==================================== 
+Weather Form Component
+==================================== */
+
+#form-button {
+  border: none !important;
+  margin-top: 2rem;
+}
+
+.temp {
+  color: #00558b;
+}
+
+/* ==================================== 
+About Component
+==================================== */
+
+.about-p {
+  margin: 2rem 0 2rem 0;
+}
+.content > div {
+    text-align: center;
+    margin: 0 3rem 2rem 0;
+    width: 20rem;
+    display: inline-block;
+    padding:10px;
+    transition-duration: 2s;
+    transition-property: background-color, color;
+    transition-delay: 1s;
+}
+
+
+#block-1:hover {
+    background-color: #dfdfdf;
+    color: #00558b;
+}
+
+#block-2:hover {
+    background-color: #dfdfdf;
+    color: #F04124;
+}
 
 /* ==================================== 
 Examples Component
@@ -93,33 +141,5 @@ Examples Component
 	transform: rotateX(180deg);
 }
 
-/* ==================================== 
-About Component
-==================================== */
-
-.about-p {
-  margin: 2rem 0 2rem 0;
-}
-.content > div {
-    text-align: center;
-    margin: 0 3rem 2rem 0;
-    width: 20rem;
-    display: inline-block;
-    padding:10px;
-    transition-duration: 2s;
-    transition-property: background-color, color;
-    transition-delay: 1s;
-}
-
-
-#block-1:hover {
-    background-color: #dfdfdf;
-    color: #00558b;
-}
-
-#block-2:hover {
-    background-color: #dfdfdf;
-    color: #F04124;
-}
 
 

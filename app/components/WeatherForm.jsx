@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+var weather_icon_path = 'images/weather-icon.jpg';
+
 class WeatherForm extends Component {
 	onFormSubmit (e) {
 		e.preventDefault();
@@ -17,7 +19,9 @@ class WeatherForm extends Component {
 				<div className="small-12 columns">
 					<form onSubmit={this.onFormSubmit.bind(this)}>
 						<input type="search" ref="location" placeholder="Search weather by city" />
-						<button className="expanded button hollow">Submit</button>
+						<button className="expanded button hollow" id="form-button">					
+							<img src={weather_icon_path} />
+						</button>
 					</form>
 				</div>
 			</div>
@@ -26,3 +30,6 @@ class WeatherForm extends Component {
 }
 
 export default WeatherForm;
+
+
+
