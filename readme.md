@@ -14,6 +14,6 @@ This weather App has the following characteristics:
 
 	1. React framework
 	2. Foundation
-	3. API - Open Weather 
+	3. API - Open Weather Map
 	4. CSS transitions (About & Examples Pages)
 	5. Provides current temperature for a given U.S. city
