@@ -3,7 +3,10 @@ import { Link, IndexLink } from 'react-router';
 import ErrorModal from 'ErrorModal';
 
 var map_path = 'images/us-map-two.jpg';
-var weather_path = 'images/noaa_weather_alt.jpg';
+var weather_path_one = 'images/noaa_weather_alt.jpg';
+var weather_path_two = 'images/sunny-sky.jpg';
+var weather_path_three = 'images/snowy-sky.jpg';
+var weather_path_four = 'images/sunset-sky.jpg';
 
 class Navigation extends Component {
 	onSearch(e) {
@@ -26,7 +29,12 @@ class Navigation extends Component {
 	    			<h1>U.S. Weather Service</h1>
 	    		</div>
 				<div className="expanded row">
-	    			<img src={weather_path} width="100%" />
+					<div className="photo-cube">
+						<img className="front" src={weather_path_one} />
+						<img className="back" src={weather_path_two} />		
+						<img className="top" src={weather_path_three} />
+						<img className="bottom" src={weather_path_four} />
+					</div>
 	    		</div>
 	    	</div>
 		);

@@ -27,7 +27,7 @@ Navigation Component
   color: #FFF;
   margin-left: 4rem;
   position: absolute;
-  z-index: 0;
+  z-index: 100;
 }
 
 /* ==================================== 
@@ -141,5 +141,44 @@ Examples Component
 	transform: rotateX(180deg);
 }
 
+/* ================================= 
+  Header Img 3D Transforms/Transitions
+==================================== */
 
+.photo-cube {
+  width: 100%;
+  height: 400px;
+  transition: transform 2s, ease-in;
+  transform-style: preserve-3d;
+}
+
+.photo-cube:hover {
+  transform: rotateX(-270deg);
+}
+
+.front, .back, .left, .right, .top, .bottom {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.front {
+  transform: translateZ(200px);
+}
+
+.back {
+  transform: translateZ(-200px) rotateY(180deg);
+  /*transform-origin: center left;*/
+}
+
+.top {
+  transform: rotateX(-90deg) translateZ(-200px);
+  /*transform-origin: top left;*/
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(200px);
+  /*transform-origin: bottom left;*/
+}
 
