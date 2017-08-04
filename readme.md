@@ -1,7 +1,5 @@
 React Weather Application 
 
-Demo URL: https://secure-tor-32518.herokuapp.com
-
 To run the App locally:
 
 	1. Clone or download file
